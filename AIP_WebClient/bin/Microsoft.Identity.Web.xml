@@ -1,0 +1,742 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Identity.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Identity.Web.CertificateDescription">
+            <summary>
+            Description of a certificate.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.CertificateDescription.FromCertificate(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Creates a certificate description from a certificate (by code).
+            </summary>
+            <param name="x509certificate2">Certificate.</param>
+            <returns>A certificate description.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.CertificateDescription.FromKeyVault(System.String,System.String)">
+            <summary>
+            Creates a certificate description from Key Vault.
+            </summary>
+            <param name="keyVaultUrl">The Key Vault URL.</param>
+            <param name="keyVaultCertificateName">The name of the certificate in Key Vault.</param>
+            <returns>A certificate description.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.CertificateDescription.FromBase64Encoded(System.String)">
+            <summary>
+            Creates a certificate description from a Base64 encoded value.
+            </summary>
+            <param name="base64EncodedValue">Base64 encoded certificate value.</param>
+            <returns>A certificate description.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.CertificateDescription.FromPath(System.String,System.String)">
+            <summary>
+            Creates a certificate description from path on disk.
+            </summary>
+            <param name="path">Path where to find the certificate file.</param>
+            <param name="password">Certificate password.</param>
+            <returns>A certificate description.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.CertificateDescription.FromStoreWithThumprint(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)">
+            <summary>
+            Creates a certificate description from a thumbprint and store location (Certificate Manager on Windows, for instance).
+            </summary>
+            <param name="certificateThumbprint">Certificate thumbprint.</param>
+            <param name="certificateStoreLocation">Store location where to find the certificate.</param>
+            <param name="certificateStoreName">Store name where to find the certificate.</param>
+            <returns>A certificate description.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.CertificateDescription.FromStoreWithDistinguishedName(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)">
+            <summary>
+            Creates a certificate description from a certificate distinguished name (such as CN=name)
+            and store location (Certificate Manager on Windows, for instance).
+            </summary>
+            <param name="certificateDistinguishedName">Certificate distinguished named.</param>
+            <param name="certificateStoreLocation">Store location where to find the certificate.</param>
+            <param name="certificateStoreName">Store name where to find the certificate.</param>
+            <returns>A certificate description.</returns>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.SourceType">
+            <summary>
+            Type of the source of the certificate.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.Container">
+            <summary>
+            Container in which to find the certificate.
+            <list type="bullet">
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.KeyVault"/>, then
+            the container is the Key Vault base URL.</item>
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.Base64Encoded"/>, then
+            this value is not used.</item>
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.Path"/>, then
+            this value is the path on disk where to find the certificate.</item>
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.StoreWithDistinguishedName"/>,
+            or <see cref="F:Microsoft.Identity.Web.CertificateSource.StoreWithThumbprint"/>, then
+            this value is the path to the certificate in the cert store, for instance <c>CurrentUser/My</c>.</item>
+            </list>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.KeyVaultUrl">
+            <summary>
+            URL of the Key Vault, for instance https://msidentitywebsamples.vault.azure.net.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.CertificateStorePath">
+            <summary>
+            Certificate store path, for instance "CurrentUser/My".
+            </summary>
+            <remarks>This property should only be used in conjunction with DistinguishedName or Thumbprint.</remarks>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.CertificateDistinguishedName">
+            <summary>
+            Certificate distinguished name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.KeyVaultCertificateName">
+            <summary>
+            Name of the certificate in Key Vault.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.CertificateThumbprint">
+            <summary>
+            Certificate thumbprint.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.CertificateDiskPath">
+            <summary>
+            Path on disk to the certificate.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.CertificatePassword">
+            <summary>
+            Path on disk to the certificate password.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.Base64EncodedValue">
+            <summary>
+            Base64 encoded certificate value.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.X509KeyStorageFlags">
+            <summary>
+             Defines where and how to import the private key of an X.509 certificate.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.ReferenceOrValue">
+            <summary>
+            Reference to the certificate or value.
+            </summary>
+            <list type="bullet">
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.KeyVault"/>, then
+            the reference is the name of the certificate in Key Vault (maybe the version?).</item>
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.Base64Encoded"/>, then
+            this value is the base 64 encoded certificate itself.</item>
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.Path"/>, then
+            this value is the password to access the certificate (if needed).</item>
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.StoreWithDistinguishedName"/>,
+            this value is the distinguished name.</item>
+            <item>If <see cref="P:Microsoft.Identity.Web.CertificateDescription.SourceType"/> equals <see cref="F:Microsoft.Identity.Web.CertificateSource.StoreWithThumbprint"/>,
+            this value is the thumbprint.</item>
+            </list>
+        </member>
+        <member name="P:Microsoft.Identity.Web.CertificateDescription.Certificate">
+            <summary>
+            The certificate, either provided directly in code
+            or loaded from the description.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.CertificateSource">
+            <summary>
+            Source for a certificate.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.CertificateSource.Certificate">
+            <summary>
+            Certificate itself.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.CertificateSource.KeyVault">
+            <summary>
+            From an Azure Key Vault.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.CertificateSource.Base64Encoded">
+            <summary>
+            Base64 encoded string directly from the configuration.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.CertificateSource.Path">
+            <summary>
+            From local path on disk.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.CertificateSource.StoreWithThumbprint">
+            <summary>
+            From the certificate store, described by its thumbprint.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.CertificateSource.StoreWithDistinguishedName">
+            <summary>
+            From the certificate store, described by its distinguished name.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.DefaultCertificateLoader">
+             <summary>
+             Certificate Loader.
+             Only use when loading a certificate from a daemon application, or an ASP NET app, using MSAL .NET directly.
+             For an ASP NET Core app, <b>Microsoft Identity Web will handle the certificate loading</b> for you.
+             <example><code>
+             IConfidentialClientApplication app;
+             ICertificateLoader certificateLoader = new DefaultCertificateLoader();
+                 certificateLoader.LoadIfNeeded(config.CertificateDescription);
+            
+                app = ConfidentialClientApplicationBuilder.Create(config.ClientId)
+                       .WithCertificate(config.CertificateDescription.Certificate)
+                       .WithAuthority(new Uri(config.Authority))
+                       .Build();
+             </code></example>
+             </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.DefaultCertificateLoader.UserAssignedManagedIdentityClientId">
+            <summary>
+            User assigned managed identity client ID (as opposed to system assigned managed identity)
+            See https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/how-to-manage-ua-identity-portal.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.DefaultCertificateLoader.LoadIfNeeded(Microsoft.Identity.Web.CertificateDescription)">
+            <summary>
+            Load the certificate from the description, if needed.
+            </summary>
+            <param name="certificateDescription">Description of the certificate.</param>
+        </member>
+        <member name="M:Microsoft.Identity.Web.DefaultCertificateLoader.LoadFromKeyVault(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)">
+            <summary>
+            Load a certificate from Key Vault, including the private key.
+            </summary>
+            <param name="keyVaultUrl">URL of Key Vault.</param>
+            <param name="certificateName">Name of the certificate.</param>
+            <param name="x509KeyStorageFlags">Defines where and how to import the private key of an X.509 certificate.</param>
+            <returns>An <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2"/> certificate.</returns>
+            <remarks>This code is inspired by Heath Stewart's code in:
+            https://github.com/heaths/azsdk-sample-getcert/blob/master/Program.cs#L46-L82.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Identity.Web.DefaultCertificateLoader.FindCertificateByCriterium(System.Security.Cryptography.X509Certificates.X509Store,System.Security.Cryptography.X509Certificates.X509FindType,System.String)">
+            <summary>
+            Find a certificate by criteria.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.ICertificateLoader">
+             <summary>
+             Interface to implement loading of a certificate.
+             Only use when loading a certificate from a daemon application, or an ASP NET app, using MSAL .NET directly.
+             For an ASP NET Core app, <b>Microsoft Identity Web will handle the certificate loading</b> for you.
+             <example><code>
+             IConfidentialClientApplication app;
+             ICertificateLoader certificateLoader = new DefaultCertificateLoader();
+                 certificateLoader.LoadIfNeeded(config.CertificateDescription);
+            
+                app = ConfidentialClientApplicationBuilder.Create(config.ClientId)
+                       .WithCertificate(config.CertificateDescription.Certificate)
+                       .WithAuthority(new Uri(config.Authority))
+                       .Build();
+             </code></example>
+             </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ICertificateLoader.LoadIfNeeded(Microsoft.Identity.Web.CertificateDescription)">
+            <summary>
+            Load the certificate from the description, if needed.
+            </summary>
+            <param name="certificateDescription">Description of the certificate.</param>
+        </member>
+        <member name="T:Microsoft.Identity.Web.ClaimConstants">
+            <summary>
+            Constants for claim types.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Name">
+            <summary>
+            Name claim: "name".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.ObjectId">
+            <summary>
+            Old Object Id claim: http://schemas.microsoft.com/identity/claims/objectidentifier.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Oid">
+            <summary>
+            New Object id claim: "oid".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.PreferredUserName">
+            <summary>
+            PreferredUserName: "preferred_username".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.TenantId">
+            <summary>
+            Old TenantId claim: "http://schemas.microsoft.com/identity/claims/tenantid".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Tid">
+            <summary>
+            New Tenant Id claim: "tid".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.ClientInfo">
+            <summary>
+            ClientInfo claim: "client_info".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.UniqueObjectIdentifier">
+            <summary>
+            UniqueObjectIdentifier: "uid".
+            Home Object Id.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.UniqueTenantIdentifier">
+            <summary>
+            UniqueTenantIdentifier: "utid".
+            Home Tenant Id.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Scope">
+            <summary>
+            Older scope claim: "http://schemas.microsoft.com/identity/claims/scope".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Scp">
+            <summary>
+            Newer scope claim: "scp".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Roles">
+            <summary>
+            New Roles claim = "roles".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Role">
+            <summary>
+            Old Role claim: "http://schemas.microsoft.com/ws/2008/06/identity/claims/role".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Sub">
+            <summary>
+            Subject claim: "sub".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Acr">
+            <summary>
+            Acr claim: "acr".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.UserFlow">
+            <summary>
+            UserFlow claim: "http://schemas.microsoft.com/claims/authnclassreference".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.Tfp">
+            <summary>
+            Tfp claim: "tfp".
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.ClaimConstants.NameIdentifierId">
+            <summary>
+            Name Identifier ID claim: "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier".
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.Constants">
+            <summary>
+            General constants for Microsoft Identity Web.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.LoginHint">
+            <summary>
+            LoginHint.
+            Represents the preferred_username claim in the ID token.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.DomainHint">
+            <summary>
+            DomainHint.
+            Determined by the tenant Id.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.Claims">
+            <summary>
+            Claims.
+            Determined from the signed-in user.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.Bearer">
+            <summary>
+            Bearer.
+            Predominant type of access token used with OAuth 2.0.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.AzureAd">
+            <summary>
+            AzureAd.
+            Configuration section name for AzureAd.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.AzureAdB2C">
+            <summary>
+            AzureAdB2C.
+            Configuration section name for AzureAdB2C.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.Scope">
+            <summary>
+            Scope.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.Constants.Policy">
+            <summary>
+            Policy for B2C user flows.
+            The name of the policy to check against a specific user flow.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.IDWebErrorMessage">
+            <summary>
+            Constants related to the error messages.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.LogMessages">
+            <summary>
+            Constants related to the log messages.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.Distributed.DistributedTokenCacheAdapterExtension">
+            <summary>
+            Extension class used to add distributed token cache serializer to MSAL.
+            See https://aka.ms/ms-id-web/token-cache-serialization for details.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.Distributed.DistributedTokenCacheAdapterExtension.AddDistributedTokenCaches(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>Adds the .NET Core distributed cache based app token cache to the service collection.</summary>
+            <param name="services">The services collection to add to.</param>
+            <returns>A <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> to chain.</returns>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter">
+            <summary>
+            An implementation of the token cache for both Confidential and Public clients backed by a Distributed Cache.
+            The Distributed Cache (L2), by default creates a Memory Cache (L1), for faster look up, resulting in a two level cache.
+            </summary>
+            <seealso>https://aka.ms/msal-net-token-cache-serialization</seealso>
+        </member>
+        <member name="F:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter._distributedCache">
+            <summary>
+            .NET Core Memory cache.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter._distributedCacheOptions">
+            <summary>
+            MSAL distributed token cache options.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Options.IOptions{Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapterOptions},Microsoft.Extensions.Logging.ILogger{Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter"/> class.
+            </summary>
+            <param name="distributedCache">Distributed cache instance to use.</param>
+            <param name="distributedCacheOptions">Options for the token cache.</param>
+            <param name="logger">MsalDistributedTokenCacheAdapter logger.</param>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter.RemoveKeyAsync(System.String)">
+            <summary>
+            Removes a specific token cache, described by its cache key
+            from the distributed cache.
+            </summary>
+            <param name="cacheKey">Key of the cache to remove.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that completes when key removal has completed.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter.ReadCacheBytesAsync(System.String)">
+            <summary>
+            Read a specific token cache, described by its cache key, from the
+            distributed cache.
+            </summary>
+            <param name="cacheKey">Key of the cache item to retrieve.</param>
+            <returns>Read blob representing a token cache for the cache key
+            (account or app).</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapter.WriteCacheBytesAsync(System.String,System.Byte[])">
+            <summary>
+            Writes a token cache blob to the serialization cache (by key).
+            </summary>
+            <param name="cacheKey">Cache key.</param>
+            <param name="bytes">blob to write.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that completes when a write operation has completed.</returns>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapterOptions">
+            <summary>
+            Options for the MSAL token cache serialization adapter,
+            which delegates the serialization to the IDistributedCache implementations
+            available with .NET Core.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapterOptions.L1CacheOptions">
+            <summary>
+            Options of the In Memory (L1) cache.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapterOptions.OnL2CacheFailure">
+            <summary>
+            Callback offered to the app to be notified when the L2 cache fails.
+            This way the app is given the possibility to act on the L2 cache,
+            for instance, in the case of Redis, to reconnect. This is left to the application as it's
+            the only one that knows about the real implementation of the L2 cache.
+            The handler should return <c>true</c> if the cache should try again the operation, and
+            <c>false</c> otherwise. When <c>true</c> is passed and the retry fails, an exception
+            will be thrown.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.TokenCacheProviders.Distributed.MsalDistributedTokenCacheAdapterOptions.L1ExpirationTimeRatio">
+            <summary>
+            Value more than 0, less than 1, to set the In Memory (L1) cache
+            expiration time values relative to the Distributed (L2) cache.
+            Default is 1.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.IMsalTokenCacheProvider">
+            <summary>
+            MSAL token cache provider interface.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.IMsalTokenCacheProvider.InitializeAsync(Microsoft.Identity.Client.ITokenCache)">
+            <summary>
+            Initializes a token cache (which can be a user token cache or an app token cache).
+            </summary>
+            <param name="tokenCache">Token cache for which to initialize the serialization.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents a completed initialization operation.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.IMsalTokenCacheProvider.ClearAsync(System.String)">
+            <summary>
+            Clear the user token cache.
+            </summary>
+            <param name="homeAccountId">HomeAccountId for a user account in the cache.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents a completed clear operation.</returns>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.InMemory.InMemoryTokenCacheProviderExtension">
+            <summary>
+            Extension class used to add an in-memory token cache serializer to MSAL.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.InMemory.InMemoryTokenCacheProviderExtension.AddInMemoryTokenCaches(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>Adds both the app and per-user in-memory token caches.</summary>
+            <param name="services">The services collection to add to.</param>
+            <returns>the services (for chaining).</returns>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheOptions">
+            <summary>
+            MSAL's in-memory token cache options.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheOptions.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheOptions"/> class.
+            By default, the sliding expiration is set for 14 days.</summary>
+        </member>
+        <member name="P:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheOptions.AbsoluteExpirationRelativeToNow">
+            <summary>
+            Gets or sets the value of the duration after which the cache entry will expire unless it's used
+            This is the duration the tokens are kept in memory cache.
+            In production, a higher value, up-to 90 days is recommended.
+            </summary>
+            <value>
+            The AbsoluteExpirationRelativeToNow value.
+            </value>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheProvider">
+            <summary>
+            An implementation of token cache for both Confidential and Public clients backed by MemoryCache.
+            </summary>
+            <seealso>https://aka.ms/msal-net-token-cache-serialization</seealso>
+        </member>
+        <member name="F:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheProvider._memoryCache">
+            <summary>
+            .NET Core Memory cache.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheProvider._cacheOptions">
+            <summary>
+            MSAL memory token cache options.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheProvider.#ctor(Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheOptions})">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="memoryCache">serialization cache.</param>
+            <param name="cacheOptions">Memory cache options.</param>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheProvider.RemoveKeyAsync(System.String)">
+            <summary>
+            Removes a token cache identified by its key, from the serialization
+            cache.
+            </summary>
+            <param name="cacheKey">token cache key.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that completes when key removal has completed.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheProvider.ReadCacheBytesAsync(System.String)">
+            <summary>
+            Reads a blob from the serialization cache (identified by its key).
+            </summary>
+            <param name="cacheKey">Token cache key.</param>
+            <returns>Read Bytes.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.InMemory.MsalMemoryTokenCacheProvider.WriteCacheBytesAsync(System.String,System.Byte[])">
+            <summary>
+            Writes a token cache blob to the serialization cache (identified by its key).
+            </summary>
+            <param name="cacheKey">Token cache key.</param>
+            <param name="bytes">Bytes to write.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that completes when a write operation has completed.</returns>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider">
+            <summary>
+            Token cache provider with default implementation.
+            </summary>
+            <seealso cref="T:Microsoft.Identity.Web.TokenCacheProviders.IMsalTokenCacheProvider" />
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider.InitializeAsync(Microsoft.Identity.Client.ITokenCache)">
+            <summary>
+            Initializes the token cache serialization.
+            </summary>
+            <param name="tokenCache">Token cache to serialize/deserialize.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents a completed initialization operation.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider.OnAfterAccessAsync(Microsoft.Identity.Client.TokenCacheNotificationArgs)">
+            <summary>
+            Raised AFTER MSAL added the new token in its in-memory copy of the cache.
+            This notification is called every time MSAL accesses the cache, not just when a write takes place:
+            If MSAL's current operation resulted in a cache change, the property TokenCacheNotificationArgs.HasStateChanged will be set to true.
+            If that is the case, we call the TokenCache.SerializeMsalV3() to get a binary blob representing the latest cache content – and persist it.
+            </summary>
+            <param name="args">Contains parameters used by the MSAL call accessing the cache.</param>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider.OnBeforeWriteAsync(Microsoft.Identity.Client.TokenCacheNotificationArgs)">
+            <summary>
+            if you want to ensure that no concurrent write takes place, use this notification to place a lock on the entry.
+            </summary>
+            <param name="args">Token cache notification arguments.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents a completed operation.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider.ClearAsync(System.String)">
+            <summary>
+            Clear the cache.
+            </summary>
+            <param name="homeAccountId">HomeAccountId for a user account in the cache.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents a completed clear operation.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider.WriteCacheBytesAsync(System.String,System.Byte[])">
+            <summary>
+            Method to be implemented by concrete cache serializers to write the cache bytes.
+            </summary>
+            <param name="cacheKey">Cache key.</param>
+            <param name="bytes">Bytes to write.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents a completed write operation.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider.ReadCacheBytesAsync(System.String)">
+            <summary>
+            Method to be implemented by concrete cache serializers to Read the cache bytes.
+            </summary>
+            <param name="cacheKey">Cache key.</param>
+            <returns>Read bytes.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.TokenCacheProviders.MsalAbstractTokenCacheProvider.RemoveKeyAsync(System.String)">
+            <summary>
+            Method to be implemented by concrete cache serializers to remove an entry from the cache.
+            </summary>
+            <param name="cacheKey">Cache key.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> that represents a completed remove key operation.</returns>
+        </member>
+        <member name="T:Microsoft.Identity.Web.TokenCacheProviders.Utility">
+            <summary>
+            Utility methods used by L1/L2 cache.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Identity.Web.ClaimsPrincipalExtensions">
+            <summary>
+            Extensions for <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetMsalAccountId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the account identifier for an MSAL.NET account from a <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">Claims principal.</param>
+            <returns>A string corresponding to an account identifier as defined in <see cref="P:Microsoft.Identity.Client.AccountId.Identifier"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetObjectId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the unique object ID associated with the <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> from which to retrieve the unique object ID.</param>
+            <remarks>This method returns the object ID both in case the developer has enabled or not claims mapping.</remarks>
+            <returns>Unique object ID of the identity, or <c>null</c> if it cannot be found.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetTenantId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the Tenant ID associated with the <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> from which to retrieve the tenant ID.</param>
+            <returns>Tenant ID of the identity, or <c>null</c> if it cannot be found.</returns>
+            <remarks>This method returns the tenant ID both in case the developer has enabled or not claims mapping.</remarks>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetLoginHint(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the login-hint associated with a <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">Identity for which to complete the login-hint.</param>
+            <returns>The login hint for the identity, or <c>null</c> if it cannot be found.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetDomainHint(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the domain-hint associated with an identity.
+            </summary>
+            <param name="claimsPrincipal">Identity for which to compute the domain-hint.</param>
+            <returns> The domain hint for the identity, or <c>null</c> if it cannot be found.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetDisplayName(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Get the display name for the signed-in user, from the <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">Claims about the user/account.</param>
+            <returns>A string containing the display name for the user, as determined by Azure AD (v1.0) and Microsoft identity platform (v2.0) tokens,
+            or <c>null</c> if the claims cannot be found.</returns>
+            <remarks>See https://docs.microsoft.com/azure/active-directory/develop/id-tokens#payload-claims. </remarks>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetUserFlowId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the user flow ID associated with the <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> from which to retrieve the user flow ID.</param>
+            <returns>User flow ID of the identity, or <c>null</c> if it cannot be found.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetHomeObjectId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the Home Object ID associated with the <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> from which to retrieve the sub claim.</param>
+            <returns>Home Object ID (sub) of the identity, or <c>null</c> if it cannot be found.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetHomeTenantId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the Home Tenant ID associated with the <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> from which to retrieve the sub claim.</param>
+            <returns>Home Tenant ID (sub) of the identity, or <c>null</c> if it cannot be found.</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Web.ClaimsPrincipalExtensions.GetNameIdentifierId(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            Gets the NameIdentifierId associated with the <see cref="T:System.Security.Claims.ClaimsPrincipal"/>.
+            </summary>
+            <param name="claimsPrincipal">The <see cref="T:System.Security.Claims.ClaimsPrincipal"/> from which to retrieve the <c>NameIdentifierId</c> claim.</param>
+            <returns>Name identifier ID of the identity, or <c>null</c> if it cannot be found.</returns>
+        </member>
+    </members>
+</doc>

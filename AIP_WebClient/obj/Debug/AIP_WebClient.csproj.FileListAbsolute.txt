@@ -1,0 +1,388 @@
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\AIP_WebClient.dll.config
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\AIP_WebClient.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\AIP_WebClient.pdb
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\csc.exe
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\csc.exe.config
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\csc.rsp
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\csi.exe
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\csi.exe.config
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\csi.rsp
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.Managed.Core.targets
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Buffers.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Collections.Immutable.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Memory.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Numerics.Vectors.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Reflection.Metadata.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\vbc.exe
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\vbc.exe.config
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\vbc.rsp
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\VBCSCompiler.exe
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\roslyn\VBCSCompiler.exe.config
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Antlr3.Runtime.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Core.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Identity.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Certificates.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Secrets.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Abstractions.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Memory.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Options.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Primitives.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Identity.Web.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Logging.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Tokens.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.InformationProtection.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.Cookies.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Web.Infrastructure.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Newtonsoft.Json.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Owin.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Buffers.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Diagnostics.DiagnosticSource.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Memory.Data.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Memory.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Net.Http.Formatting.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Numerics.Vectors.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Security.Cryptography.ProtectedData.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Text.Encodings.Web.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Text.Json.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Threading.Tasks.Extensions.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.ValueTuple.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Helpers.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Http.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Http.WebHost.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Mvc.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Optimization.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Razor.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.WebPages.Deployment.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.WebPages.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.WebPages.Razor.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\WebGrease.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Core.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Identity.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Certificates.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Secrets.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Abstractions.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Memory.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Options.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Extensions.Primitives.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Identity.Web.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Logging.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Tokens.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.InformationProtection.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.Cookies.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Newtonsoft.Json.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Buffers.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Diagnostics.DiagnosticSource.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Memory.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Memory.Data.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Numerics.Vectors.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Security.Cryptography.ProtectedData.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Text.Encodings.Web.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Text.Json.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Threading.Tasks.Extensions.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.ValueTuple.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Net.Http.Formatting.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Helpers.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Http.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Http.WebHost.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Mvc.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Optimization.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.Razor.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.WebPages.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.WebPages.Deployment.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\System.Web.WebPages.Razor.xml
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\Antlr3.Runtime.pdb
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Helpers.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Http.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Mvc.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Optimization.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Razor.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.AssemblyReference.cache
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.CoreCompileInputs.cache
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.CopyComplete
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.pdb
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\mip_dotnet.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libbz2-1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libffi-7.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libgio-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libglib-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libgmodule-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libgobject-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libgsf-1-114.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libiconv-2.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libintl-8.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\liblzma-5.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libpcre-1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libwinpthread-1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\libxml2-2.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\mip_ClientTelemetry.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\mip_core.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\mip_file_sdk.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\mip_protection_sdk.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\mip_upe_sdk.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x64\zlib1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\mip_dotnet.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libbz2-1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libffi-7.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libgcc_s_dw2-1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libgio-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libglib-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libgmodule-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libgobject-2.0-0.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libgsf-1-114.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libiconv-2.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libintl-8.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\liblzma-5.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libpcre-1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libwinpthread-1.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\libxml2-2.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\mip_ClientTelemetry.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\mip_core.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\mip_file_sdk.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\mip_protection_sdk.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\mip_upe_sdk.dll
+C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebClient\bin\x86\zlib1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\mip_dotnet.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libbz2-1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libffi-7.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libgio-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libglib-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libgmodule-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libgobject-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libgsf-1-114.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libiconv-2.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libintl-8.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\liblzma-5.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libpcre-1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libwinpthread-1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\libxml2-2.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\mip_ClientTelemetry.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\mip_core.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\mip_file_sdk.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\mip_protection_sdk.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\mip_upe_sdk.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x64\zlib1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\mip_dotnet.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libbz2-1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libffi-7.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libgcc_s_dw2-1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libgio-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libglib-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libgmodule-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libgobject-2.0-0.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libgsf-1-114.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libiconv-2.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libintl-8.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\liblzma-5.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libpcre-1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libwinpthread-1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\libxml2-2.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\mip_ClientTelemetry.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\mip_core.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\mip_file_sdk.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\mip_protection_sdk.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\mip_upe_sdk.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\x86\zlib1.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\AIP_WebClient.dll.config
+C:\git\TSMC\AIP\AIP_WebClient\bin\AIP_WebClient.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\AIP_WebClient.pdb
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\csc.exe
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\csc.exe.config
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\csc.rsp
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\csi.exe
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\csi.exe.config
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\csi.rsp
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.Managed.Core.targets
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Buffers.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Collections.Immutable.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Memory.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Numerics.Vectors.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Reflection.Metadata.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\vbc.exe
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\vbc.exe.config
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\vbc.rsp
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\VBCSCompiler.exe
+C:\git\TSMC\AIP\AIP_WebClient\bin\roslyn\VBCSCompiler.exe.config
+C:\git\TSMC\AIP\AIP_WebClient\bin\Antlr3.Runtime.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Core.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Identity.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Certificates.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Secrets.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Abstractions.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Memory.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Options.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Primitives.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Identity.Web.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Logging.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Tokens.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.InformationProtection.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.Cookies.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Web.Infrastructure.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Newtonsoft.Json.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Owin.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Buffers.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Diagnostics.DiagnosticSource.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Memory.Data.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Memory.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Net.Http.Formatting.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Numerics.Vectors.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Security.Cryptography.ProtectedData.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Text.Encodings.Web.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Text.Json.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Threading.Tasks.Extensions.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.ValueTuple.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Helpers.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Http.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Http.WebHost.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Mvc.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Optimization.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Razor.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.WebPages.Deployment.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.WebPages.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.WebPages.Razor.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\WebGrease.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Core.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Identity.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Certificates.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Azure.Security.KeyVault.Secrets.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Abstractions.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Caching.Memory.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Options.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Extensions.Primitives.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Identity.Web.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Logging.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.IdentityModel.Tokens.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.InformationProtection.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.Cookies.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Newtonsoft.Json.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Buffers.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Diagnostics.DiagnosticSource.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Memory.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Memory.Data.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Numerics.Vectors.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Security.Cryptography.ProtectedData.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Text.Encodings.Web.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Text.Json.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Threading.Tasks.Extensions.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.ValueTuple.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Net.Http.Formatting.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Helpers.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Http.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Http.WebHost.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Mvc.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Optimization.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.Razor.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.WebPages.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.WebPages.Deployment.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\System.Web.WebPages.Razor.xml
+C:\git\TSMC\AIP\AIP_WebClient\bin\Antlr3.Runtime.pdb
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Helpers.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Http.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Http.WebHost.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Mvc.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Optimization.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Razor.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.AssemblyReference.cache
+C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.CoreCompileInputs.cache
+C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.CopyComplete
+C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.dll
+C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.pdb
