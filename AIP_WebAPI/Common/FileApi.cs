@@ -146,7 +146,7 @@ namespace AIP_WebAPI.Common
         /// <param name="labelId"></param>
         /// <param name="justificationMessage"></param>
         /// <returns></returns>
-        public bool ApplyLabel(Stream stream, Stream outputStream, string fileName, string labelId, string justificationMessage)
+        public bool IsProtected(Stream stream, Stream outputStream, string fileName, out string message)
         {
             IFileHandler handler;
 
@@ -167,9 +167,60 @@ namespace AIP_WebAPI.Common
                 // Applying a label requires LabelingOptions. Hard coded values here, but could be provided by user. 
                 LabelingOptions labelingOptions = new LabelingOptions()
                 {
-                    JustificationMessage = justificationMessage,
-                    AssignmentMethod = AssignmentMethod.Standard,
-                    ExtendedProperties = new List<KeyValuePair<string, string>>()
+                    AssignmentMethod = AssignmentMethod.Standard
+                };
+
+                bool isProtected = false;
+                if (null != handler.Label)
+                {
+                    isProtected = handler.Label.IsProtectionAppliedFromLabel;
+                }
+                handler.Dispose();
+                message = string.Empty;
+                return isProtected;
+            }
+            catch (Exception ex)
+            {
+                message = $"File:{fileName} is protected attribute checking failure. \n Error: {ex.Message}";
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Applies the specified label to the provided file or stream.
+        /// Justification message may be required if downgrading or removing label.
+        /// </summary>
+        /// <param name="stream"></param>
+        /// <param name="outputStream"></param>
+        /// <param name="fileName"></param>
+        /// <param name="labelId"></param>
+        /// <param name="justificationMessage"></param>
+        /// <returns></returns>
+        public bool ApplyLabel(Stream stream, Stream outputStream, string fileName, string labelId, out string message)
+        {
+            message = string.Empty;
+            bool result = false;
+
+            IFileHandler handler;
+
+            try
+            {
+                // Try to create an IFileHandler using private CreateFileHandler().
+                if (stream != null)
+                {
+                    handler = CreateFileHandler(stream, fileName);
+                }
+
+                // Try to create an IFileHandler using private CreateFileHandler().
+                else
+                {
+                    handler = CreateFileHandler(null, fileName);
+                }
+
+                // Applying a label requires LabelingOptions. Hard coded values here, but could be provided by user. 
+                LabelingOptions labelingOptions = new LabelingOptions()
+                {
+                    AssignmentMethod = AssignmentMethod.Standard
                 };
 
                 // Set the label on the input stream or file.
@@ -177,25 +228,30 @@ namespace AIP_WebAPI.Common
 
                 // Call CommitAsync to write result to output stream. 
                 // Returns a bool to indicate true or false.
-                var result = Task.Run(async () => await handler.CommitAsync(outputStream)).Result;
+                result = Task.Run(async () => await handler.CommitAsync(outputStream)).Result;
 
                 if (result)
                 {
                     // Submit an audit event if the change was successful.
                     handler.NotifyCommitSuccessful(fileName);
                 }
-
-                return result;
+                else
+                {
+                    message = $"Failed to apply label:{labelId}";
+                }
+                handler.Dispose();
             }
-
             catch (Exception ex)
             {
-                throw ex;
+                message = $"Failed to apply label:{labelId}\n{ex.Message}\n{ex.InnerException.Message}";
             }
+            return result;
         }
 
-        public bool RemoveLabel(Stream stream, Stream outputStream, string fileName,  string justificationMessage)
+        public bool RemoveLabel(Stream stream, Stream outputStream, string fileName,  string justificationMessage, out string message)
         {
+            message = string.Empty;
+            bool result = false;
             IFileHandler handler;
 
             try
@@ -214,11 +270,13 @@ namespace AIP_WebAPI.Common
 
                 // Applying a label requires LabelingOptions. Hard coded values here, but could be provided by user. 
                 LabelingOptions labelingOptions = new LabelingOptions()
-                {
-                    JustificationMessage = string.IsNullOrEmpty(justificationMessage)? "Label modified by App.": justificationMessage,
-                    AssignmentMethod = AssignmentMethod.Standard,
-                    ExtendedProperties = new List<KeyValuePair<string, string>>()
+                {                   
+                    AssignmentMethod = AssignmentMethod.Standard
+                    //ExtendedProperties = new List<KeyValuePair<string, string>>()
                 };
+
+                labelingOptions.IsDowngradeJustified = true;
+                labelingOptions.JustificationMessage = string.IsNullOrEmpty(justificationMessage) ? "Label modified by App." : justificationMessage;
 
                 // Set the label on the input stream or file.
                 //handler.SetLabel(fileEngine.GetLabelById(labelId), labelingOptions, new ProtectionSettings());
@@ -226,26 +284,26 @@ namespace AIP_WebAPI.Common
 
                 // Call CommitAsync to write result to output stream. 
                 // Returns a bool to indicate true or false.
-                var result = Task.Run(async () => await handler.CommitAsync(outputStream)).Result;
+                result = Task.Run(async () => await handler.CommitAsync(outputStream)).Result;
 
                 if (result)
                 {
                     // Submit an audit event if the change was successful.
                     handler.NotifyCommitSuccessful(fileName);
                 }
-
-                return result;
+                handler.Dispose();                
             }
-
             catch (Exception ex)
             {
-                throw ex;
+                message = $"Failed to remove label:{ex.Message}\n{ex.InnerException.Message}";
             }
+            return result;
         }
 
-        public bool ApplyLabel(Stream stream, Stream outputStream, string fileName, string labelId, string justificationMessage, bool isCustom, ProtectionDescriptor adHocProtectionDescriptor, out string errorMessage)
+        // For custom defined label
+        public bool ApplyLabel(Stream stream, Stream outputStream, string fileName, string labelId, string justificationMessage, bool isCustom, ProtectionDescriptor adHocProtectionDescriptor, out string message)
         {
-            errorMessage = string.Empty;
+            message = string.Empty;
             bool result = false;
 
             IFileHandler handler;
@@ -292,12 +350,12 @@ namespace AIP_WebAPI.Common
                 }
                 else
                 {
-                    errorMessage = $"Failed to apply label:{labelId}";
+                    message = $"Failed to apply label:{labelId}";
                 }
             }
             catch (Exception ex)
             {
-                errorMessage = $"Failed to apply label:{labelId}\n{ex.Message}";
+                message = $"Failed to apply label:{labelId}\n{ex.Message}";
             }
                 return result;
         }

@@ -1,15 +1,24 @@
 ﻿using AIP_WebAPI.Common;
 using AIP_WebAPI.Models;
+using Azure.Identity;
+using Azure.Storage.Blobs;
 using Azure.Storage.Files.Shares;
 using Azure.Storage.Files.Shares.Models;
 using Microsoft.InformationProtection;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
 using System.Web.Http;
 using System.Web.Http.Results;
 
@@ -20,60 +29,179 @@ namespace AIP_WebAPI.Controllers
         private static string clientId = ConfigurationManager.AppSettings["ida:ClientID"];
         private static string appName = ConfigurationManager.AppSettings["ApplicationName"];
         private static string appVersion = ConfigurationManager.AppSettings["ApplicationVersion"];
-		private static string shareName = ConfigurationManager.AppSettings["ShareName"];
 		private static string connectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
-		private FileApi fileApi;
+		private static string UseMI = ConfigurationManager.AppSettings["UseManagedIdentity"];
 
-        // GET api/<controller>
+		private static FileApi fileApi = new FileApi(clientId, appName, appVersion, ClaimsPrincipal.Current);
+
         [Authorize]
-        public JsonResult<List<Models.Label>> Get()
+		[HttpGet]
+		public JsonResult<List<Models.Label>> GetLabels()
         {
-            fileApi = new FileApi(clientId, appName, appVersion, ClaimsPrincipal.Current);
             List<Models.Label> result = fileApi.ListAllLabels();
             return Json(result);
         }
 
-		// POST api/values
+        [Authorize]
+        [HttpPost]
+		public async Task<JsonResult<ResponseData>> SetLabel([FromBody] PostData data)
+		{
+			string[] blobstring = data.blobUrl.Split('/');
+			string storageAccount = blobstring[2];
+			string fileName = blobstring.Last();
+			string containerName = blobstring[3];
+
+			ResponseData responseData = new ResponseData();
+
+			try
+			{
+				bool.TryParse(UseMI, out bool isUseMI);
+
+				BlobServiceClient blobServiceClient = null;
+				BlobContainerClient containerClient = null;
+				BlobClient blob = null;
+
+				if (isUseMI)
+				{
+					var cred = new ChainedTokenCredential(new ManagedIdentityCredential(), new AzureCliCredential());
+					blobServiceClient = new BlobServiceClient(new Uri($"{storageAccount}"), cred);
+				}
+                else
+				{
+					blobServiceClient = new BlobServiceClient(connectionString);					
+				}
+				containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+				blob = containerClient.GetBlobClient(fileName);
+
+				MemoryStream ms = new MemoryStream();
+				var result = await blob.DownloadToAsync(ms);
+
+				MemoryStream outputStream = new MemoryStream();
+
+				bool isSuccess = fileApi.ApplyLabel(ms, outputStream, fileName, data.labelId, out string message);
+				ms.Dispose();
+
+				responseData.IsSuccess = isSuccess;
+				responseData.Message = message;
+
+				if (isSuccess)
+				{
+					BlobContainerClient targetContainerClient = blobServiceClient.GetBlobContainerClient("target");
+					await targetContainerClient.CreateIfNotExistsAsync(Azure.Storage.Blobs.Models.PublicAccessType.None);
+					BlobClient targetBlob = targetContainerClient.GetBlobClient(fileName);
+					outputStream.Position = 0;
+					await targetBlob.UploadAsync(outputStream, true);					
+					responseData.TargetUrl = HttpUtility.UrlDecode(targetBlob.Uri.ToString());
+					outputStream.Dispose();
+				}
+			}
+			catch (Exception ex)
+			{
+				responseData.Message = ex.Message;
+			}
+			return Json(responseData);
+		}
+
 		[Authorize]
 		[HttpPost]
-		public HttpResponseMessage Post([FromBody] PostData data)
+		public async Task<JsonResult<ResponseData>> RemoveLabel([FromBody] PostData data)
 		{
+			string[] blobstring = data.blobUrl.Split('/');
+			string storageAccount = blobstring[2];
+			string fileName = blobstring.Last();
+			string containerName = blobstring[3];
 
-			fileApi = new FileApi(clientId, appName, appVersion, ClaimsPrincipal.Current);
+			ResponseData responseData = new ResponseData();
 
-			string dirName = data.relativeFilePath.ToLower().Replace(data.fileName.ToLower(), "");
-			// Get a reference to the file
-			ShareClient share = new ShareClient(connectionString, shareName);
-			ShareDirectoryClient directory = share.GetDirectoryClient(dirName);
-			ShareFileClient file = directory.GetFileClient(data.fileName);
-
-			// Download the file
-			ShareFileDownloadInfo download = file.Download();
-			MemoryStream ms = new MemoryStream();
-			download.Content.CopyTo(ms);
-
-			MemoryStream outputStream = new MemoryStream();
-
-			ProtectionDescriptor protectionDescriptor = new ProtectionDescriptor(data.userRightsList);
-
-			string errMessage = string.Empty;
-			bool result = fileApi.ApplyLabel(ms, outputStream, data.fileName, data.labelId, data.justificationMessage, data.isCustom, protectionDescriptor, out errMessage);
-			if (result)
+			try
 			{
-				HttpResponseMessage httpResponseMessage = Request.CreateResponse(HttpStatusCode.OK);
-				outputStream.Position = 0;
-				httpResponseMessage.Content = new StreamContent(outputStream);
-				httpResponseMessage.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-				httpResponseMessage.Content.Headers.ContentDisposition.FileName = data.fileName;
-				httpResponseMessage.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+				bool.TryParse(UseMI, out bool isUseMI);
 
-				return httpResponseMessage;
+				BlobServiceClient blobServiceClient = null;
+				BlobContainerClient containerClient = null;
+				BlobClient blob = null;
+
+				if (isUseMI)
+				{
+					var cred = new ChainedTokenCredential(new ManagedIdentityCredential(), new AzureCliCredential());
+					blobServiceClient = new BlobServiceClient(new Uri($"{storageAccount}"), cred);
+				}
+				else
+				{
+					blobServiceClient = new BlobServiceClient(connectionString);
+				}
+				containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+				blob = containerClient.GetBlobClient(fileName);
+
+				MemoryStream ms = new MemoryStream();
+				await blob.DownloadToAsync(ms);
+
+				MemoryStream outputStream = new MemoryStream();
+
+				bool isSuccess = fileApi.RemoveLabel(ms, outputStream, fileName, data.justificationMessage, out string message);
+
+				responseData.IsSuccess = isSuccess;
+				responseData.Message = message;
+
+				if (isSuccess)
+				{
+					BlobContainerClient targetContainerClient = blobServiceClient.GetBlobContainerClient("target");
+					await targetContainerClient.CreateIfNotExistsAsync(Azure.Storage.Blobs.Models.PublicAccessType.None);
+					BlobClient targetBlob = targetContainerClient.GetBlobClient(fileName);
+					outputStream.Position = 0;
+					await targetBlob.UploadAsync(outputStream, true);
+					responseData.TargetUrl = HttpUtility.UrlDecode(targetBlob.Uri.ToString());
+				}
 			}
-			else
+			catch (Exception ex)
 			{
-				HttpError err = new HttpError(errMessage);
-				return Request.CreateResponse(HttpStatusCode.BadRequest, err);
+				responseData.Message = ex.Message;
 			}
+			return Json(responseData);
+		}
+
+		[Authorize]
+		[HttpPost]
+		public async Task<JsonResult<bool>> IsProtected([FromBody] PostData data)
+		{
+			string[] blobstring = data.blobUrl.Split('/');
+			string storageAccount = blobstring[2];
+			string fileName = blobstring.Last();
+			string containerName = blobstring[3];
+			bool isSuccess = false;
+
+			try
+			{
+				bool.TryParse(UseMI, out bool isUseMI);
+
+				BlobServiceClient blobServiceClient = null;
+				BlobContainerClient containerClient = null;
+				BlobClient blob = null;
+
+				if (isUseMI)
+				{
+					var cred = new ChainedTokenCredential(new ManagedIdentityCredential(), new AzureCliCredential());
+					blobServiceClient = new BlobServiceClient(new Uri($"{storageAccount}"), cred);
+				}
+				else
+				{
+					blobServiceClient = new BlobServiceClient(connectionString);
+				}
+				containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+				blob = containerClient.GetBlobClient(fileName);
+
+				MemoryStream ms = new MemoryStream();
+				var result = await blob.DownloadToAsync(ms);
+
+				MemoryStream outputStream = new MemoryStream();
+
+				isSuccess = fileApi.IsProtected(ms, outputStream, fileName, out string message);
+			}
+			catch (Exception ex)
+			{
+				return Json(false);
+			}
+			return Json(isSuccess);
 		}
 	}
 }

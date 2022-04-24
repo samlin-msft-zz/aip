@@ -16,6 +16,9 @@ using System.IO;
 using Microsoft.InformationProtection.Protection;
 using System.Net;
 using System.Web.Http;
+using Azure.Storage.Blobs;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace AIP_WebClient.Controllers
 {
@@ -25,10 +28,12 @@ namespace AIP_WebClient.Controllers
         public string getValuesEndpoint = ConfigurationManager.AppSettings["GetValuesEndpoint"];
         public string getLabelsEndpoint = ConfigurationManager.AppSettings["GetLabelsEndpoint"];
         public string setLabelEndpoint = ConfigurationManager.AppSettings["SetLabelEndpoint"];
+        public string IsProtectedEndpoint = ConfigurationManager.AppSettings["IsProtectedEndpoint"];
         public string removeLabelEndpoint = ConfigurationManager.AppSettings["RemoveLabelEndpoint"];
-        public string labelId = ConfigurationManager.AppSettings["LabelId"];
+        //public string labelId = ConfigurationManager.AppSettings["LabelId"];
         public string customLabelId = ConfigurationManager.AppSettings["CustomLabelId"];
         public string apiScope = ConfigurationManager.AppSettings["APIScope"];
+        public string connectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
 
         #region Test
         public async Task<string> Test()
@@ -67,13 +72,14 @@ namespace AIP_WebClient.Controllers
         }
         #endregion
 
+        [System.Web.Http.Authorize]
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
 
             return View();
         }
-
+ 
         #region Get Labels
         public async Task<string> GetLabels()
         {
@@ -112,13 +118,17 @@ namespace AIP_WebClient.Controllers
         #endregion
 
         #region Set Label
-        public async Task<ActionResult> SetLabel()
+        public async Task<ActionResult> SetLabel(FormCollection fc)
         {
-            UserRights userRights = null;
-            bool isUserDefine = false;
-            string relativeFilePath = "/l1/l2/sample.xlsx";
-            string fileName = "sample.xlsx";
-            string justificationMessage = "Test";
+            string blobUrl = fc["blob"].ToString();
+            string labelId = fc["labelId"].ToString();
+            string fileName = blobUrl.Split('/').Last();
+
+            //UserRights userRights = null;
+            //bool isUserDefine = false;
+            //string relativeFilePath = "/l1/l2/sample_en.docx";
+            //string fileName = "sample_en.docx";
+            //string justificationMessage = "Test";
 
             AuthenticationResult result = null;
             string responseContent = string.Empty;
@@ -134,34 +144,24 @@ namespace AIP_WebClient.Controllers
                 if (result != null)
                 {
                     // Add them to a new List<UserRights>
-                    List<UserRights> allUserRights = new List<UserRights>()
-                    {
-                        userRights
-                    };
+                    //List<UserRights> allUserRights = new List<UserRights>()
+                    //{
+                    //    userRights
+                    //};
 
                     PostData postData = new PostData()
                     {
-                        relativeFilePath = relativeFilePath,
-                        fileName = fileName,
-                        justificationMessage = justificationMessage,
-                        isCustom = isUserDefine,
-                        labelId = this.labelId,
-                        userRightsList = allUserRights
+                        blobUrl = blobUrl,
+                        //justificationMessage = "Set label justification",
+                        labelId = labelId,
+                        //userRightsList = allUserRights
                     };
 
                     HttpClient client = new HttpClient();
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", result.AccessToken);
                     HttpResponseMessage httpResponseMessage = await client.PostAsJsonAsync(baseUri + setLabelEndpoint, postData);
-                    if (httpResponseMessage.IsSuccessStatusCode)
-                    {
-                        Stream stream = await httpResponseMessage.Content.ReadAsStreamAsync();
-                        stream.Position = 0;
-                        return File(stream, "application/octet-stream", fileName);
-                    }
-                    else
-                    {
-                        return Content($"failed to download file: {fileName}");
-                    }
+                    string responsedata = await httpResponseMessage.Content.ReadAsStringAsync();
+                    return Content(responsedata);
                 }
                 else { return Content($"failed to get token for {account.Username}"); }
             }
@@ -173,13 +173,23 @@ namespace AIP_WebClient.Controllers
         #endregion
 
         #region Remove Label
-        public async Task<ActionResult> RemoveLabel()
+        public async Task<ActionResult> RemoveLabel(FormCollection fc)
         {
-            UserRights userRights = null;
-            bool isUserDefine = false;
-            string relativeFilePath = "/l1/l2/sample_1.xlsx";
-            string fileName = "sample_1.xlsx";
-            string justificationMessage = "Remove label.";
+            string blobUrl = fc["blob"].ToString();
+
+            // Retrive blob from url
+            //BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
+            //string containerName = "source";
+            //BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+            //BlobClient blob = containerClient.GetBlobClient(blobUrl);
+
+            string fileName = blobUrl.Split('/').Last(); //"sample_en_labeled.docx";
+
+            //UserRights userRights = null;
+            //bool isUserDefine = false;
+            //string relativeFilePath = "/l1/l2/sample_en_labeled.docx";
+            //string fileName = "sample_en_labeled.docx";
+            //string justificationMessage = "Remove label.";
 
             AuthenticationResult result = null;
             string responseContent = string.Empty;
@@ -195,44 +205,116 @@ namespace AIP_WebClient.Controllers
                 if (result != null)
                 {
                     // Add them to a new List<UserRights>
-                    List<UserRights> allUserRights = new List<UserRights>()
-                    {
-                        userRights
-                    };
+                    //List<UserRights> allUserRights = new List<UserRights>()
+                    //{
+                    //    userRights
+                    //};
 
                     PostData postData = new PostData()
                     {
-                        relativeFilePath = relativeFilePath,
-                        fileName = fileName,
-                        justificationMessage = justificationMessage,
-                        isCustom = isUserDefine,
-                        labelId = this.labelId,
-                        userRightsList = allUserRights
+                        blobUrl = blobUrl,
+                        //relativeFilePath = relativeFilePath,
+                        //fileName = fileName,
+                        justificationMessage = "Remove label justification"
+                        //isCustom = isUserDefine,
+                        //labelId = this.labelId,
+                        //userRightsList = allUserRights
                     };
 
                     HttpClient client = new HttpClient();
                     client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", result.AccessToken);
                     HttpResponseMessage httpResponseMessage = await client.PostAsJsonAsync(baseUri + removeLabelEndpoint, postData);
-                    if (httpResponseMessage.IsSuccessStatusCode)
-                    {
-                        Stream stream = await httpResponseMessage.Content.ReadAsStreamAsync();
-                        stream.Position = 0;
-                        return File(stream, "application/octet-stream", fileName);
-                    }
-                    else
-                    {
-                        return Content($"failed to download file: {fileName}");
-                    }
+                    //if (httpResponseMessage.IsSuccessStatusCode)
+                    //{
+                        string responsedata =  await httpResponseMessage.Content.ReadAsStringAsync();
+                        return Content(responsedata);
+                    //}
+                    //else
+                    //{
+                    //    string responsedata = await httpResponseMessage.Content.ReadAsStringAsync();
+                    //    return Content(responsedata);
+                    //}
                 }
                 else { return Content($"failed to get token for {account.Username}"); }
             }
             catch (Exception ex)
             {
-                return Content($"failed to set label, {ex.Message}");
+                return Content($"failed to remove label, {ex.Message}");
             }
         }
         #endregion
 
+        #region IsProtected
+        public async Task<ActionResult> IsProtected(FormCollection fc)
+        {
+            string blobUrl = fc["blob"].ToString();
+
+            // Retrive blob from url
+            //BlobServiceClient blobServiceClient = new BlobServiceClient(connectionString);
+            //string containerName = "source";
+            //BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(containerName);
+            //BlobClient blob = containerClient.GetBlobClient(blobUrl);
+
+            string fileName = blobUrl.Split('/').Last(); //"sample_en_labeled.docx";
+
+            //UserRights userRights = null;
+            //bool isUserDefine = false;
+            //string relativeFilePath = "/l1/l2/sample_en_labeled.docx";
+            //string fileName = "sample_en_labeled.docx";
+            //string justificationMessage = "Remove label.";
+
+            //UserRights userRights = null;
+            //bool isUserDefine = false;
+            //string relativeFilePath = "/l1/l2/sample_en_labeled.docx";
+            //string fileName = "sample_en_labeled.docx";
+            //string justificationMessage = "Remove label.";
+
+            AuthenticationResult result = null;
+            string responseContent = string.Empty;
+            string[] scopes = { apiScope };
+
+            IConfidentialClientApplication app = await MsalAppBuilder.BuildConfidentialClientApplication();
+            var account = await app.GetAccountAsync(ClaimsPrincipal.Current.GetAccountId());
+
+            try
+            {
+                result = await app.AcquireTokenSilent(scopes, account).ExecuteAsync().ConfigureAwait(false);
+
+                if (result != null)
+                {
+                    //// Add them to a new List<UserRights>
+                    //List<UserRights> allUserRights = new List<UserRights>()
+                    //{
+                    //    userRights
+                    //};
+
+                    PostData postData = new PostData()
+                    {
+                        blobUrl = blobUrl
+                        //relativeFilePath = relativeFilePath,
+                        //fileName = fileName,
+                        //justificationMessage = "Remove label justification",
+                        //isCustom = isUserDefine,
+                        //labelId = this.labelId,
+                        //userRightsList = allUserRights
+                    };
+
+                    HttpClient client = new HttpClient();
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", result.AccessToken);
+                    HttpResponseMessage httpResponseMessage = await client.PostAsJsonAsync(baseUri + IsProtectedEndpoint, postData);
+                    string responsedata = await httpResponseMessage.Content.ReadAsStringAsync();
+                    return Content(responsedata);
+                }
+                else { return Content($"failed to get token for {account.Username}"); }
+            }
+            catch (Exception ex)
+            {
+                return Content($"failed to check if the file is protected, {ex.Message}");
+            }
+        }
+        #endregion
+
+        /*
         #region Set Custom Permission
         public async Task<ActionResult> SetCustomPermission()
         {
@@ -310,5 +392,7 @@ namespace AIP_WebClient.Controllers
             }
         }
         #endregion
+        */
+
     }
 }

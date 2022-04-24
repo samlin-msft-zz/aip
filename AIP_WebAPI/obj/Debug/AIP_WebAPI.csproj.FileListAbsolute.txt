@@ -212,6 +212,7 @@ C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebAPI\obj\D
 C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebAPI\obj\Debug\AIP_WebAPI.dll
 C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebAPI\obj\Debug\AIP_WebAPI.pdb
 C:\1\OneDrive - Microsoft\Cases\Chailease\AIP\AIP(MSFT)\AIP\AIP\AIP_WebAPI\obj\Debug\AIP_WebAPI.csproj.AssemblyReference.cache
+C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\mip_core.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x64\mip_dotnet.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x64\libbz2-1.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x64\libffi-7.dll
@@ -248,7 +249,6 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\libpcre-1.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\libwinpthread-1.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\libxml2-2.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\mip_ClientTelemetry.dll
-C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\mip_core.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\mip_file_sdk.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\mip_protection_sdk.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\x86\mip_upe_sdk.dll
@@ -307,12 +307,20 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\roslyn\VBCSCompiler.exe
 C:\git\TSMC\AIP\AIP_WebAPI\bin\roslyn\VBCSCompiler.exe.config
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Antlr3.Runtime.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Core.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Identity.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Storage.Blobs.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Storage.Common.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Storage.Files.Shares.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Routing.Abstractions.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Bcl.AsyncInterfaces.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Extensions.Primitives.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Identity.Client.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Logging.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Protocols.dll
@@ -322,6 +330,7 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Tokens.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Tokens.Saml.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Xml.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.InformationProtection.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Net.Http.Headers.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Owin.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Owin.Security.ActiveDirectory.dll
@@ -336,11 +345,14 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\Owin.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Buffers.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Diagnostics.DiagnosticSource.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\System.IO.Hashing.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Memory.Data.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Memory.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Net.Http.Formatting.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Net.Http.Json.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Numerics.Vectors.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Security.Cryptography.ProtectedData.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Text.Encodings.Web.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Text.Json.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Threading.Tasks.Extensions.dll
@@ -356,11 +368,19 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Web.WebPages.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Web.WebPages.Razor.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\WebGrease.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Core.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Identity.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Storage.Blobs.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Storage.Common.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Azure.Storage.Files.Shares.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Mvc.Abstractions.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.AspNetCore.Routing.Abstractions.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Bcl.AsyncInterfaces.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Extensions.Primitives.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Identity.Client.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Identity.Client.Extensions.Msal.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.JsonWebTokens.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Logging.pdb
@@ -378,6 +398,7 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Tokens.Saml.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Xml.pdb
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.IdentityModel.Xml.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.InformationProtection.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Net.Http.Headers.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Owin.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\Microsoft.Owin.Security.xml
@@ -390,10 +411,13 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Buffers.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Diagnostics.DiagnosticSource.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.IdentityModel.Tokens.Jwt.pdb
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\System.IO.Hashing.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Memory.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Memory.Data.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Net.Http.Json.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Numerics.Vectors.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Security.Cryptography.ProtectedData.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Text.Encodings.Web.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Text.Json.xml
 C:\git\TSMC\AIP\AIP_WebAPI\bin\System.Threading.Tasks.Extensions.xml
@@ -421,7 +445,6 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.Razor.resources.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.WebPages.resources.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
-C:\git\TSMC\AIP\AIP_WebAPI\obj\Debug\AIP_WebAPI.csproj.AssemblyReference.cache
 C:\git\TSMC\AIP\AIP_WebAPI\obj\Debug\AIP_WebAPI.csproj.CoreCompileInputs.cache
 C:\git\TSMC\AIP\AIP_WebAPI\obj\Debug\AIP_WebAPI.csproj.CopyComplete
 C:\git\TSMC\AIP\AIP_WebAPI\obj\Debug\AIP_WebAPI.dll

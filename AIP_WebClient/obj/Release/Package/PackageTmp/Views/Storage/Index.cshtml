@@ -1,0 +1,13 @@
+﻿<div class="row">
+    <div>
+       @ViewBag.UploadMessage
+    </div>
+    <div class="col-md-4">
+        @using (Html.BeginForm("Upload", "Storage", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div>Please select a file to upload</div>
+                <input name="file" type="file">
+                <input type="submit" value="Upload file" />
+         }
+    </div>
+</div>
