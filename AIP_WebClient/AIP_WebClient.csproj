@@ -376,6 +376,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\aipwebclient - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\webclient2330 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\webclient2330 - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\npm.js" />
     <None Include="Scripts\_references.js" />

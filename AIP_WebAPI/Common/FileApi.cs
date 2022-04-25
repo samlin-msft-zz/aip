@@ -146,9 +146,11 @@ namespace AIP_WebAPI.Common
         /// <param name="labelId"></param>
         /// <param name="justificationMessage"></param>
         /// <returns></returns>
-        public bool IsProtected(Stream stream, Stream outputStream, string fileName, out string message)
+        public ContentLabel GetFileLabel(Stream stream, Stream outputStream, string fileName, out string message)
         {
+            ContentLabel contentLabel = null;
             IFileHandler handler;
+            message = string.Empty;
 
             try
             {
@@ -170,19 +172,21 @@ namespace AIP_WebAPI.Common
                     AssignmentMethod = AssignmentMethod.Standard
                 };
 
-                bool isProtected = false;
                 if (null != handler.Label)
                 {
-                    isProtected = handler.Label.IsProtectionAppliedFromLabel;
+                    contentLabel = handler.Label;
                 }
-                handler.Dispose();
-                message = string.Empty;
-                return isProtected;
+                else
+                {
+                    message = $"The file has no label.";
+                }
+                handler.Dispose();                
+                return contentLabel;
             }
             catch (Exception ex)
             {
-                message = $"File:{fileName} is protected attribute checking failure. \n Error: {ex.Message}";
-                return false;
+                message = $"Failed to get file:{fileName} label information, Error: {ex.Message}";
+                return null;
             }
         }
 

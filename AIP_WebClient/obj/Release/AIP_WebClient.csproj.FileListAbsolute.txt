@@ -193,8 +193,8 @@ C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.Razor.resources.dll
 C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.resources.dll
 C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
 C:\git\TSMC\AIP\AIP_WebClient\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
-C:\git\TSMC\AIP\AIP_WebClient\obj\Release\AIP_WebClient.csproj.AssemblyReference.cache
 C:\git\TSMC\AIP\AIP_WebClient\obj\Release\AIP_WebClient.csproj.CoreCompileInputs.cache
 C:\git\TSMC\AIP\AIP_WebClient\obj\Release\AIP_WebClient.csproj.CopyComplete
 C:\git\TSMC\AIP\AIP_WebClient\obj\Release\AIP_WebClient.dll
 C:\git\TSMC\AIP\AIP_WebClient\obj\Release\AIP_WebClient.pdb
+C:\git\TSMC\AIP\AIP_WebClient\obj\Release\AIP_WebClient.csproj.AssemblyReference.cache

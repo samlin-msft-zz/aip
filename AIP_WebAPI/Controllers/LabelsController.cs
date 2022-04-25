@@ -162,13 +162,14 @@ namespace AIP_WebAPI.Controllers
 
 		[Authorize]
 		[HttpPost]
-		public async Task<JsonResult<bool>> IsProtected([FromBody] PostData data)
+		public async Task<JsonResult<ResponseData>> GetFileLabel([FromBody] PostData data)
 		{
 			string[] blobstring = data.blobUrl.Split('/');
 			string storageAccount = blobstring[2];
 			string fileName = blobstring.Last();
 			string containerName = blobstring[3];
-			bool isSuccess = false;
+
+			ResponseData responseData = new ResponseData();
 
 			try
 			{
@@ -195,13 +196,21 @@ namespace AIP_WebAPI.Controllers
 
 				MemoryStream outputStream = new MemoryStream();
 
-				isSuccess = fileApi.IsProtected(ms, outputStream, fileName, out string message);
+				ContentLabel contentLabel = fileApi.GetFileLabel(ms, outputStream, fileName, out string message);
+				responseData.IsSuccess = true;
+				if(contentLabel != null)
+                {
+					responseData.LabelId = contentLabel.Label.Id;
+					responseData.LabelName = contentLabel.Label.Name;
+					responseData.IsProtected = contentLabel.IsProtectionAppliedFromLabel;
+				}
 			}
 			catch (Exception ex)
 			{
-				return Json(false);
+				responseData.Message = ex.Message;
+				responseData.IsSuccess = false;
 			}
-			return Json(isSuccess);
+			return Json(responseData);
 		}
 	}
 }

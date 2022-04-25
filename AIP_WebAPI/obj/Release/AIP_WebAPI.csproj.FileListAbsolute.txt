@@ -231,7 +231,6 @@ C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.Razor.resources.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.WebPages.resources.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
 C:\git\TSMC\AIP\AIP_WebAPI\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
-C:\git\TSMC\AIP\AIP_WebAPI\obj\Release\AIP_WebAPI.csproj.AssemblyReference.cache
 C:\git\TSMC\AIP\AIP_WebAPI\obj\Release\AIP_WebAPI.csproj.CoreCompileInputs.cache
 C:\git\TSMC\AIP\AIP_WebAPI\obj\Release\AIP_WebAPI.csproj.CopyComplete
 C:\git\TSMC\AIP\AIP_WebAPI\obj\Release\AIP_WebAPI.dll

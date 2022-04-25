@@ -11,7 +11,7 @@
 		<add key="UnobtrusiveJavaScriptEnabled" value="true" />
 
 		<add key="ida:ClientId" value="37c48fa8-8142-46ce-90d6-50bd2f3e90d9" />
-		<add key="ida:ClientSecret" value="***REMOVED***" />
+		<add key="ida:ClientSecret" value="*****" />
 		<add key="ida:Tenant" value="0b95465c-3875-4597-b163-7af92075b3b2" />
 		<add key="ida:AADInstance" value="https://login.microsoftonline.com/{0}{1}" />
 		<!--<add key="ida:RedirectUri" value="https://localhost:44320/" />-->
@@ -22,11 +22,11 @@
 		<add key="GetLabelsEndpoint" value="Labels/GetLabels" />
 		<add key="SetLabelEndpoint" value="Labels/SetLabel" />
 		<add key="RemoveLabelEndpoint" value="Labels/RemoveLabel" />
-		<add key="IsProtectedEndpoint" value="Labels/GetFileLabel" />
+		<add key="IsProtectedEndpoint" value="Labels/IsProtected" />
 		<add key="APIScope" value="api://e142fd26-5d40-47f7-84f3-bb1e42ce5495/.default" />
 		<add key="LabelId" value="963853e4-6c9c-42b9-84cf-df86b2f706ea" />
 		<add key="CustomLabelId" value="7fc33f19-9a3b-4d1f-b915-1a1584eac092" />
-		<add key="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=statranslator2330;AccountKey=***REMOVED***;EndpointSuffix=core.windows.net" />
+		<add key="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=statranslator2330;AccountKey=*****;EndpointSuffix=core.windows.net" />
 
 	</appSettings>
 	<system.web>

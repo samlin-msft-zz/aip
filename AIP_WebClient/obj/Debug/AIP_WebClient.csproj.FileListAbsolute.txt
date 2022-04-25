@@ -391,3 +391,4 @@ C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.CoreCompileInputs.c
 C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.CopyComplete
 C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.dll
 C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.pdb
+C:\git\TSMC\AIP\AIP_WebClient\obj\Debug\AIP_WebClient.csproj.AssemblyReference.cache
